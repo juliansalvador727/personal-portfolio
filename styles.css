@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 
-/* NAVIGATION BAR*/
+/* Navigation Bar */
 
 nav {
   display: flex;
@@ -51,4 +51,29 @@ nav .right a:last-child {
   background-color: var(--text-color);
   padding: 5px 15px;
   border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+@media (max-width: 750px) {
+  /* Navigation Bar */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
 }
